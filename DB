@@ -1,0 +1,21 @@
+DATABASE
+First, open the CQL shell using the cqlsh command in-- Create a keyspace
+CREATE KEYSPACE IF NOT EXISTS your_keyspace
+WITH replication = {
+  'class': 'SimpleStrategy',
+  'replication_factor': 1
+};
+
+-- Switch to the keyspace
+USE your_keyspace;
+
+-- Create a 'customer' table
+CREATE TABLE IF NOT EXISTS customer (
+  id UUID PRIMARY KEY,
+  username TEXT,
+  email TEXT,
+  password TEXT,
+  cus_address TEXT,
+  cus_ph TEXT
+);
+ for certaion example.
