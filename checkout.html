@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Bean|Pay</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/check.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div class="header-1">
+
+        <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>Coffee Bean</a>
+
+        <form action="" class="search-box-container">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="home.html">HOME</a>
+            <a href="home.html">CATEGORY</a>
+           <!-- <a href="#product">product</a>-->
+            <a href="home.html">ABOUT US</a>
+            <a href="home.html">CONTACT</a>
+            <a href="home.html">LOGIN</a>
+            
+        </nav>
+
+        <div class="icons">
+            <a href="/cart" class="fas fa-shopping-cart"></a>
+            <!--<a href="#" class="fas fa-search"></a>-->
+            <a href="/profile" class="fas fa-user-circle"></a>
+        </div>
+        
+            
+         </div>
+
+    </div>
+
+</header>
+    <section class="user-details">
+        <div class="user">
+      <h1>credit/debit card</h1>
+      <form action="/charge" method="POST">
+        
+        
+        
+
+      
+        <div id="payment-card"></div>
+        <div id="payment-errors"></div>
+        <a href="success.html" class="btn">pay</a>
+      </form>
+    </div>
+    </section>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="payment.js"></script>
+  </body>
+</html>
+
+
+
+
+<section class="check" id="check">
+
+    <div class="image">
+        <img src="images/home.jpg" alt="">
+    </div>
+
+</section>
